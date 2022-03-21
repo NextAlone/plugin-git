@@ -73,12 +73,10 @@ function __git.init
     __git.create_abbr gcpc git cherry-pick --continue
 
     # git diff abbr
-    __git.create_abbr gd git diff
-    __git.create_abbr gdc git diff --cached
+    __git.create_abbr gd git diff --word-diff
+    __git.create_abbr gdc git diff --word-diff --cached
     __git.create_abbr gds git diff --stat
     __git.create_abbr gdsc git diff --stat --cached
-    __git.create_abbr gdw git diff --word-diff
-    __git.create_abbr gdwc git diff --word-diff --cached
     __git.create_abbr gdto git difftool
 
     # git update ignore abbr
@@ -96,14 +94,9 @@ function __git.init
     __git.create_abbr glo git pull origin --rebase --autostash
 
     # git log abbr
-    __git.create_abbr glg git log --stat
-    __git.create_abbr glgg git log --graph
-    __git.create_abbr glgga git log --graph --decorate --all
-    __git.create_abbr glgo git log --oneline --decorate --color
-    __git.create_abbr glgog git log --oneline --decorate --color --graph
-    __git.create_abbr glgom git log --oneline --decorate --color \(__git.default_branch\)..
-    __git.create_abbr glgod git log --oneline --decorate --color develop..
-    __git.create_abbr glgoo "git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short"
+    __git.create_abbr glg git log --oneline --decorate --color --graph
+    __git.create_abbr glgs git log --stat --graph
+    __git.create_abbr glga git log --graph --decorate --all
 
     # git merge abr
     __git.create_abbr gmg git merge
