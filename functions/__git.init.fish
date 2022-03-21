@@ -51,7 +51,7 @@ function __git.init
     __git.create_abbr gcfx git commit --fixup
 
     # git config abbr
-    __git.create_abbr gcf git config --list
+    __git.create_abbr gcf git config
 
     # git clone abbr
     __git.create_abbr gcl git clone
