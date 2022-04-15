@@ -23,10 +23,10 @@ function __git.init
     __git.create_abbr gapp git apply
 
     # git branch abbr
-    __git.create_abbr gb git branch -vv
-    __git.create_abbr gba git branch -a -vv
-    # __git.create_abbr gban git branch -a -v --no-merged
-    __git.create_abbr gbd git branch -d
+    __git.create_abbr gb git branch --verbose --verbose
+    __git.create_abbr gba git branch --all --verbose --verbose
+    # __git.create_abbr gban git branch -a --verbose --no-merged
+    __git.create_abbr gbd git branch --delete
     __git.create_abbr gbd! git branch -D
 
     # git blame abbr
@@ -40,14 +40,14 @@ function __git.init
     __git.create_abbr gbss git bisect start
 
     # git commit abbr
-    __git.create_abbr gc git commit -v
-    __git.create_abbr gc! git commit -v --amend
-    __git.create_abbr gcn! git commit -v --no-edit --amend
-    __git.create_abbr gca git commit -v -a
-    __git.create_abbr gca! git commit -v -a --amend
-    __git.create_abbr gcan! git commit -v -a --no-edit --amend
-    __git.create_abbr gcm git commit -m
-    __git.create_abbr gcam git commit -a -m
+    __git.create_abbr gc git commit --verbose
+    __git.create_abbr gc! git commit --verbose --amend
+    __git.create_abbr gcn! git commit --verbose --no-edit --amend
+    __git.create_abbr gca git commit --verbose --all
+    __git.create_abbr gca! git commit --verbose --all --amend
+    __git.create_abbr gcan! git commit --verbose --all --no-edit --amend
+    __git.create_abbr gcm git commit --message
+    __git.create_abbr gcam git commit --all --message
     __git.create_abbr gcfx git commit --fixup
 
     # git config abbr
@@ -57,15 +57,15 @@ function __git.init
     __git.create_abbr gcl git clone
 
     # git clean abbr
-    __git.create_abbr gclean git clean -di
-    __git.create_abbr gclean! git clean -dfx
+    __git.create_abbr gclean git clean -d --interactive
+    __git.create_abbr gclean! git clean -d --force -x
     __git.create_abbr gclean!! "git reset --hard; and git clean -dfx"
 
     # git checkout abbreviations
     __git.create_abbr gco git checkout
 
     # git commit count abbr
-    __git.create_abbr gcount git shortlog -sn
+    __git.create_abbr gcount git shortlog --summary --numbered
 
     # git cherry-pick abbr
     __git.create_abbr gcp git cherry-pick
@@ -90,7 +90,7 @@ function __git.init
 
     # git pull abbr
     __git.create_abbr gl git pull --rebase --autostash
-    __git.create_abbr gla git pull --all -v --rebase --autostash
+    __git.create_abbr gla git pull --all --verbose --rebase --autostash
     __git.create_abbr glo git pull origin --rebase --autostash
 
     # git log abbr
@@ -112,7 +112,7 @@ function __git.init
     __git.create_abbr gpo! git push --force-with-lease origin
 
     # git remote abbr
-    __git.create_abbr gr git remote -v
+    __git.create_abbr gr git remote --verbose
     __git.create_abbr gra git remote add
     __git.create_abbr grmv git remote rename
     __git.create_abbr grrm git remote remove
