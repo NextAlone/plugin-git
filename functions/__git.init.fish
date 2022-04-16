@@ -84,9 +84,9 @@ function __git.init
     __git.create_abbr gunignore git update-index --no-assume-unchanged
 
     # git fetch abbr
-    __git.create_abbr gf git fetch
-    __git.create_abbr gfa git fetch --all --prune
-    __git.create_abbr gfo git fetch origin
+    __git.create_abbr gf git fetch --verbose
+    __git.create_abbr gfa git fetch --verbose --all --prune
+    __git.create_abbr gfo git fetch --verbose origin
 
     # git pull abbr
     __git.create_abbr gl git pull --rebase --autostash
