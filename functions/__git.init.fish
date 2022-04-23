@@ -85,7 +85,7 @@ function __git.init
 
     # git fetch abbr
     __git.create_abbr gf git fetch --verbose
-    __git.create_abbr gfa git fetch --verbose --append --prune
+    __git.create_abbr gfa git fetch --verbose --all --prune
     __git.create_abbr gfo git fetch --verbose origin
 
     # git pull abbr
