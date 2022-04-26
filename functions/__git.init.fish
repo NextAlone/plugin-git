@@ -106,10 +106,8 @@ function __git.init
     __git.create_abbr gmt git mergetool --no-prompt
 
     # git push abbr
-    __git.create_abbr gp git push
-    __git.create_abbr gp! git push --force-with-lease
-    __git.create_abbr gpo git push origin
-    __git.create_abbr gpo! git push --force-with-lease origin
+    __git.create_abbr gp git push --verbose
+    __git.create_abbr gp! git push --verbose --force-with-lease
 
     # git remote abbr
     __git.create_abbr gr git remote --verbose
