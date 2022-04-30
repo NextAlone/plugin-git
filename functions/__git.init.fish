@@ -49,6 +49,7 @@ function __git.init
     __git.create_abbr gcm git commit --message
     __git.create_abbr gcam git commit --all --message
     __git.create_abbr gcfx git commit --fixup
+    __git.create_abbr gcu git commit --message 'Update'
 
     # git config abbr
     __git.create_abbr gcf git config
