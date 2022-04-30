@@ -149,7 +149,7 @@ function __git.init
     __git.create_abbr gsh git show
 
     # git status abbr
-    __git.create_abbr gss git status -s
+    __git.create_abbr gs git status -s
 
     # git stash abbr
     __git.create_abbr gst git stash
