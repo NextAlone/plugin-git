@@ -143,8 +143,10 @@ function __git.init
 
     # git restore abbr
     __git.create_abbr grs git restore
+    __git.create_abbr grsp git restore --patch
     __git.create_abbr grss git restore --source
     __git.create_abbr grst git restore --staged
+    __git.create_abbr grstp git restore --staged --patch
 
     # git show abbr
     __git.create_abbr gsh git show
