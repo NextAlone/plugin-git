@@ -107,8 +107,8 @@ function __git.init
     __git.create_abbr gmt git mergetool --no-prompt
 
     # git push abbr
-    __git.create_abbr gp git push --verbose
-    __git.create_abbr gp! git push --verbose --force-with-lease
+    __git.create_abbr gp git push
+    __git.create_abbr gp! git push --force-with-lease
 
     # git remote abbr
     __git.create_abbr gr git remote --verbose
@@ -167,8 +167,8 @@ function __git.init
     __git.create_abbr gsuri git submodule update --recursive --init
 
     # git tag abbr
-    __git.create_abbr gts git tag
-    __git.create_abbr gtv git tag | sort -V
+    __git.create_abbr gtg git tag
+    __git.create_abbr gtgv git tag | sort -V
 
     # git switch abbr
     __git.create_abbr gsw git switch
