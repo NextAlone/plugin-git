@@ -23,8 +23,9 @@ function __git.init
     __git.create_abbr gapp git apply
 
     # git branch abbr
-    __git.create_abbr gb git branch --verbose --verbose
-    __git.create_abbr gba git branch --all --verbose --verbose
+    __git.create_abbr gb git branch --all --verbose --verbose
+    __git.create_abbr gba git branch --add --verbose --verbose
+    __git.create_abbr gbr git branch --remove --verbose --verbose
     # __git.create_abbr gban git branch -a --verbose --no-merged
     __git.create_abbr gbd git branch --delete
     __git.create_abbr gbd! git branch -D
@@ -160,6 +161,7 @@ function __git.init
     __git.create_abbr gstl git stash list
     __git.create_abbr gstp git stash pop
     __git.create_abbr gsts git stash show --text
+    __git.create_abbr gstc git stash clear
 
     # git submodule abbr
     __git.create_abbr gsu git submodule update
