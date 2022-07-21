@@ -151,7 +151,7 @@ function __git.init
     __git.create_abbr grstp git restore --staged --patch
 
     # git show abbr
-    __git.create_abbr gsh git show
+    __git.create_abbr gsh git show --patch-with-stat
 
     # git status abbr
     __git.create_abbr gs git status -s
@@ -165,9 +165,10 @@ function __git.init
     __git.create_abbr gstc git stash clear
 
     # git submodule abbr
-    __git.create_abbr gsu git submodule update
-    __git.create_abbr gsur git submodule update --recursive
-    __git.create_abbr gsuri git submodule update --recursive --init
+    __git.create_abbr gsm git submodule
+    __git.create_abbr gsmu git submodule update
+    __git.create_abbr gsmur git submodule update --recursive
+    __git.create_abbr gsmuri git submodule update --recursive --init
 
     # git tag abbr
     __git.create_abbr gtg git tag
