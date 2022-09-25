@@ -42,16 +42,16 @@ function __git.init
     __git.create_abbr gbss git bisect start
 
     # git commit abbr
-    __git.create_abbr gc git commit --verbose
-    __git.create_abbr gc! git commit --verbose --amend
+    __git.create_abbr gc git commit --verbose --signoff
+    __git.create_abbr gc! git commit --verbose --amend --signoff
     __git.create_abbr gcn! git commit --verbose --no-edit --amend
-    __git.create_abbr gca git commit --verbose --all
+    __git.create_abbr gca git commit --verbose --all --signoff
     __git.create_abbr gca! git commit --verbose --all --amend
     __git.create_abbr gcan! git commit --verbose --all --no-edit --amend
-    __git.create_abbr gcm git commit --message
-    __git.create_abbr gcam git commit --all --message
+    __git.create_abbr gcm git commit --signoff --message
+    __git.create_abbr gcam git commit --signoff --all --message
     __git.create_abbr gcfx git commit --fixup
-    __git.create_abbr gcu git commit --message 'Update'
+    __git.create_abbr gcu git commit --signoff --message 'Update'
 
     # git config abbr
     __git.create_abbr gcf git config
