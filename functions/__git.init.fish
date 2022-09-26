@@ -24,7 +24,6 @@ function __git.init
 
     # git branch abbr
     __git.create_abbr gb git branch --verbose --verbose
-    __git.create_abbr gbl git branch --all --verbose --verbose
     __git.create_abbr gba git branch --add --verbose --verbose
     __git.create_abbr gbr git branch --remove --verbose --verbose
     # __git.create_abbr gban git branch -a --verbose --no-merged
