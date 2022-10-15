@@ -54,6 +54,7 @@ function __git.init
 
     # git config abbr
     __git.create_abbr gcf git config
+    __git.create_abbr gcfl git config --list
 
     # git clone abbr
     __git.create_abbr gcl git clone
