@@ -42,7 +42,7 @@ function __git.init
 
     # git commit abbr
     __git.create_abbr gc git commit --verbose --signoff
-    __git.create_abbr gc! git commit --verbose --amend --signoff
+    __git.create_abbr gc! git commit --verbose --amend 
     __git.create_abbr gcn! git commit --verbose --no-edit --amend
     __git.create_abbr gca git commit --verbose --all --signoff
     __git.create_abbr gca! git commit --verbose --all --amend
