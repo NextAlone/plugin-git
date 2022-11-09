@@ -82,6 +82,9 @@ function __git.init
     __git.create_abbr gdsc git diff --stat --cached
     __git.create_abbr gdto git difftool
 
+    # git format-patch abbr
+    __git.create_abbr gfp git format-patch  
+
     # git update ignore abbr
     __git.create_abbr gignore git update-index --assume-unchanged
     __git.create_abbr gunignore git update-index --no-assume-unchanged
@@ -183,25 +186,25 @@ function __git.init
     __git.create_abbr gwch git whatchanged -p --abbrev-commit --pretty=medium
 
     # git flow abbreviations
-    __git.create_abbr gfb git flow bugfix
-    __git.create_abbr gff git flow feature
-    __git.create_abbr gfr git flow release
-    __git.create_abbr gfh git flow hotfix
-    __git.create_abbr gfs git flow support
+    __git.create_abbr gflb git flow bugfix
+    __git.create_abbr gflf git flow feature
+    __git.create_abbr gflr git flow release
+    __git.create_abbr gflh git flow hotfix
+    __git.create_abbr gfls git flow support
 
-    __git.create_abbr gfbs git flow bugfix start
-    __git.create_abbr gffs git flow feature start
-    __git.create_abbr gfrs git flow release start
-    __git.create_abbr gfhs git flow hotfix start
-    __git.create_abbr gfss git flow support start
+    __git.create_abbr gflbs git flow bugfix start
+    __git.create_abbr gflfs git flow feature start
+    __git.create_abbr gflrs git flow release start
+    __git.create_abbr gflhs git flow hotfix start
+    __git.create_abbr gflss git flow support start
 
-    __git.create_abbr gfbt git flow bugfix track
-    __git.create_abbr gfft git flow feature track
-    __git.create_abbr gfrt git flow release track
-    __git.create_abbr gfht git flow hotfix track
-    __git.create_abbr gfst git flow support track
+    __git.create_abbr gflbt git flow bugfix track
+    __git.create_abbr gflft git flow feature track
+    __git.create_abbr gflrt git flow release track
+    __git.create_abbr gflht git flow hotfix track
+    __git.create_abbr gflst git flow support track
 
-    __git.create_abbr gfp git flow publish
+    __git.create_abbr gflp git flow publish
 
     # Cleanup declared functions
     functions -e __git.create_abbr
