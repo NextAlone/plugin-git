@@ -162,6 +162,7 @@ function __git.init
 
     # git stash abbr
     __git.create_abbr gst git stash
+    __git.create_abbr gsta git stash apply
     __git.create_abbr gstd git stash drop
     __git.create_abbr gstl git stash list
     __git.create_abbr gstp git stash pop
