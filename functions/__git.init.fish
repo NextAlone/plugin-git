@@ -130,6 +130,7 @@ function __git.init
     __git.create_abbr grbc git rebase --continue
     __git.create_abbr grbs git rebase --skip
     __git.create_abbr grbi git rebase --interactive
+    __git.create_abbr grbo git rebase --onto
     __git.create_abbr grbm git rebase \(__git.default_branch\)
     __git.create_abbr grbmi git rebase \(__git.default_branch\) --interactive
     __git.create_abbr grbd git rebase dev
