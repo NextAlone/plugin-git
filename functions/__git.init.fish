@@ -51,6 +51,7 @@ function __git.init
     __git.create_abbr gcam git commit --signoff --all --message
     __git.create_abbr gcfx git commit --fixup
     __git.create_abbr gcu git commit --signoff --message 'Update'
+    __git.create_abbr gcb git commit --signoff --message 'Bugfix'
 
     # git config abbr
     __git.create_abbr gcf git config
