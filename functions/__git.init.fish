@@ -115,6 +115,7 @@ function __git.init
     # git push abbr
     __git.create_abbr gp git push
     __git.create_abbr gpo git push origin
+    __git.create_abbr gpf git push fork
     __git.create_abbr gpu git push --set-upstream origin 
     __git.create_abbr gp! git push --force-with-lease
 
