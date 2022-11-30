@@ -114,10 +114,12 @@ function __git.init
 
     # git push abbr
     __git.create_abbr gp git push
-    __git.create_abbr gpo git push origin
-    __git.create_abbr gpf git push fork
-    __git.create_abbr gpu git push --set-upstream origin 
     __git.create_abbr gp! git push --force-with-lease
+    __git.create_abbr gpo git push origin
+    __git.create_abbr gpo! git push origin --force-with-lease
+    __git.create_abbr gpf git push fork
+    __git.create_abbr gpf! git push fork --force-with-lease
+    __git.create_abbr gpu git push --set-upstream origin 
 
     # git remote abbr
     __git.create_abbr gr git remote --verbose
@@ -191,6 +193,7 @@ function __git.init
     __git.create_abbr gwch git whatchanged -p --abbrev-commit --pretty=medium
 
     # git flow abbreviations
+    __git.create_abbr gfl git flow
     __git.create_abbr gflb git flow bugfix
     __git.create_abbr gflf git flow feature
     __git.create_abbr gflr git flow release
