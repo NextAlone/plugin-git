@@ -24,11 +24,13 @@ function __git.init
 
     # git branch abbr
     __git.create_abbr gb git branch --verbose --verbose
-    __git.create_abbr gba git branch --add --verbose --verbose
-    __git.create_abbr gbr git branch --remove --verbose --verbose
+    __git.create_abbr gba git branch --add
+    __git.create_abbr gbr git branch --remove
+    __git.create_abbr gbn git branch --no-merged --verbose --verbose
     # __git.create_abbr gban git branch -a --verbose --no-merged
     __git.create_abbr gbd git branch --delete
     __git.create_abbr gbd! git branch -D
+    __git.create_abbr gball git branch --all --verbose --verbose
 
     # git blame abbr
     __git.create_abbr gbl git blame -b -w
@@ -42,7 +44,7 @@ function __git.init
 
     # git commit abbr
     __git.create_abbr gc git commit --verbose --signoff
-    __git.create_abbr gc! git commit --verbose --amend 
+    __git.create_abbr gc! git commit --verbose --amend
     __git.create_abbr gcn! git commit --verbose --no-edit --amend
     __git.create_abbr gca git commit --verbose --all --signoff
     __git.create_abbr gca! git commit --verbose --all --amend
@@ -50,8 +52,8 @@ function __git.init
     __git.create_abbr gcm git commit --signoff --message
     __git.create_abbr gcam git commit --signoff --all --message
     __git.create_abbr gcfx git commit --fixup
-    __git.create_abbr gcu git commit --signoff --message 'Update'
-    __git.create_abbr gcb git commit --signoff --message 'Bugfix'
+    __git.create_abbr gcu git commit --signoff --message Update
+    __git.create_abbr gcb git commit --signoff --message Bugfix
 
     # git config abbr
     __git.create_abbr gcf git config
@@ -84,16 +86,16 @@ function __git.init
     __git.create_abbr gdto git difftool
 
     # git format-patch abbr
-    __git.create_abbr gfp git format-patch  
+    __git.create_abbr gfp git format-patch
 
     # git update ignore abbr
     __git.create_abbr gignore git update-index --assume-unchanged
     __git.create_abbr gunignore git update-index --no-assume-unchanged
 
     # git fetch abbr
-    __git.create_abbr gf git fetch --verbose
-    __git.create_abbr gfa git fetch --verbose --all --prune
-    __git.create_abbr gfo git fetch --verbose origin
+    __git.create_abbr gf git fetch
+    __git.create_abbr gfa git fetch --all --prune
+    __git.create_abbr gfo git fetch origin
 
     # git pull abbr
     __git.create_abbr gl git pull
@@ -121,7 +123,7 @@ function __git.init
     __git.create_abbr gpo! git push origin --force-with-lease
     __git.create_abbr gpf git push fork
     __git.create_abbr gpf! git push fork --force-with-lease
-    __git.create_abbr gpu git push --set-upstream origin 
+    __git.create_abbr gpu git push --set-upstream origin
 
     # git remote abbr
     __git.create_abbr gr git remote --verbose
