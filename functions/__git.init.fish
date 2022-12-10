@@ -58,6 +58,8 @@ function __git.init
     # git config abbr
     __git.create_abbr gcf git config
     __git.create_abbr gcfl git config --list
+    __git.create_abbr gcfg git config --global
+    __git.create_abbr gcfgl git config --global --list
 
     # git clone abbr
     __git.create_abbr gcl git clone
