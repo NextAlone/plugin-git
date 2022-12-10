@@ -188,8 +188,8 @@ function __git.init
     __git.create_abbr gsmuri git submodule update --recursive --init
 
     # git tag abbr
-    __git.create_abbr gtg git tag
-    __git.create_abbr gtgv git tag | sort -V
+    __git.create_abbr gt git tag
+    __git.create_abbr gtv git tag | sort -V
 
     # git switch abbr
     __git.create_abbr gsw git switch
