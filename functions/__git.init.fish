@@ -22,6 +22,9 @@ function __git.init
     # git apply abbr
     __git.create_abbr gapp git apply
 
+    # git am abbr 
+    __git.create_abbr gam git am
+
     # git branch abbr
     __git.create_abbr gb git branch --verbose --verbose
     __git.create_abbr gba git branch --add
@@ -31,6 +34,7 @@ function __git.init
     __git.create_abbr gbd git branch --delete
     __git.create_abbr gbd! git branch -D
     __git.create_abbr gball git branch --all --verbose --verbose
+    __git.create_abbr gbsu git branch --set-upstream-to
 
     # git blame abbr
     __git.create_abbr gbl git blame -b -w
@@ -52,6 +56,7 @@ function __git.init
     __git.create_abbr gcm git commit --signoff --message
     __git.create_abbr gcam git commit --signoff --all --message
     __git.create_abbr gcfx git commit --fixup
+    __git.create_abbr gcsq git commit --squash
     __git.create_abbr gcu git commit --signoff --message Update
     __git.create_abbr gcb git commit --signoff --message Bugfix
 
@@ -99,6 +104,9 @@ function __git.init
     __git.create_abbr gfa git fetch --all --prune
     __git.create_abbr gfo git fetch origin
 
+    # git init abbr 
+    __git.create_abbr ginit git init
+
     # git pull abbr
     __git.create_abbr gl git pull
     __git.create_abbr gla git pull --all
@@ -121,6 +129,7 @@ function __git.init
     # git push abbr
     __git.create_abbr gp git push
     __git.create_abbr gp! git push --force-with-lease
+    __git.create_abbr gpat git push --all --tags
     __git.create_abbr gpo git push origin
     __git.create_abbr gpo! git push origin --force-with-lease
     __git.create_abbr gpf git push fork
@@ -170,7 +179,7 @@ function __git.init
     __git.create_abbr gsh git show --patch-with-stat
 
     # git status abbr
-    __git.create_abbr gs git status -s
+    __git.create_abbr gs git status --short --branch
 
     # git stash abbr
     __git.create_abbr gst git stash
@@ -183,13 +192,13 @@ function __git.init
 
     # git submodule abbr
     __git.create_abbr gsm git submodule
-    __git.create_abbr gsmu git submodule update
-    __git.create_abbr gsmur git submodule update --recursive
-    __git.create_abbr gsmuri git submodule update --recursive --init
+    __git.create_abbr gsmu git submodule update --recursive --init
 
     # git tag abbr
     __git.create_abbr gt git tag
     __git.create_abbr gtv git tag | sort -V
+    __git.create_abbr gt! git tag --force
+    __git.create_abbr gtd git tag --delete
 
     # git switch abbr
     __git.create_abbr gsw git switch
@@ -219,6 +228,14 @@ function __git.init
     __git.create_abbr gflst git flow support track
 
     __git.create_abbr gflp git flow publish
+
+    # git extras abbreviations
+    __git.create_abbr gex git-extras
+    __git.create_abbr g! git abort
+    __git.create_abbr gbdm git delete-merged-branches
+    __git.create_abbr gbds git delete-squashed-branches
+    __git.create_abbr gu git undo --soft
+    __git.create_abbr gu! git undo --hard
 
     # Cleanup declared functions
     functions -e __git.create_abbr
