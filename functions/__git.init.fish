@@ -96,9 +96,11 @@ function __git.init
     __git.create_abbr gfo git fetch --verbose origin
 
     # git pull abbr
-    __git.create_abbr gl git pull --rebase --autostash
-    __git.create_abbr gla git pull --all --verbose --rebase --autostash
-    __git.create_abbr glo git pull origin --rebase --autostash
+    __git.create_abbr gl git pull
+    __git.create_abbr gla git pull --all
+    __git.create_abbr glp git pull --prune
+    __git.create_abbr glo git pull origin
+    __git.create_abbr glu git pull set-upstream
 
     # git log abbr
     __git.create_abbr glg git log --oneline --decorate --color --graph
