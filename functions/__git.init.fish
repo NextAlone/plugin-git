@@ -100,9 +100,9 @@ function __git.init
     __git.create_abbr gunignore git update-index --no-assume-unchanged
 
     # git fetch abbr
-    __git.create_abbr gf git fetch --prune --verbose
-    __git.create_abbr gfa git fetch --all --prune --verbose
-    __git.create_abbr gfo git fetch origin --prune --verbose
+    __git.create_abbr gf git fetch --verbose
+    __git.create_abbr gfa git fetch --all --verbose
+    __git.create_abbr gfo git fetch origin --verbose
 
     # git init abbr 
     __git.create_abbr ginit git init
