@@ -27,13 +27,12 @@ function __git.init
 
     # git branch abbr
     __git.create_abbr gb git branch --verbose --verbose
-    __git.create_abbr gba git branch --add
+    __git.create_abbr gba git branch --all --verbose --verbose
     __git.create_abbr gbr git branch --remove
     __git.create_abbr gbn git branch --no-merged --verbose --verbose
     # __git.create_abbr gban git branch -a --verbose --no-merged
     __git.create_abbr gbd git branch --delete
     __git.create_abbr gbd! git branch -D
-    __git.create_abbr gball git branch --all --verbose --verbose
     __git.create_abbr gbu git branch --set-upstream-to
 
     # git blame abbr
