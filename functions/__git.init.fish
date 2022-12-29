@@ -34,7 +34,7 @@ function __git.init
     __git.create_abbr gbd git branch --delete
     __git.create_abbr gbd! git branch -D
     __git.create_abbr gball git branch --all --verbose --verbose
-    __git.create_abbr gbsu git branch --set-upstream-to
+    __git.create_abbr gbu git branch --set-upstream-to
 
     # git blame abbr
     __git.create_abbr gbl git blame -b -w
@@ -72,7 +72,7 @@ function __git.init
     # git clean abbr
     __git.create_abbr gclean git clean -d --interactive
     __git.create_abbr gclean! git clean -d --force -x
-    __git.create_abbr gclean!! "git reset --hard; and git clean -dfx"
+    __git.create_abbr gclean!! "git reset --hard; and git clean -d --force -x"
 
     # git checkout abbreviations
     __git.create_abbr gco git checkout
@@ -84,16 +84,18 @@ function __git.init
     __git.create_abbr gcp git cherry-pick
     __git.create_abbr gcpa git cherry-pick --abort
     __git.create_abbr gcpc git cherry-pick --continue
+    __git.create_abbr gcps git cherry-pick --skip
+
 
     # git diff abbr
     __git.create_abbr gd git diff --word-diff
     __git.create_abbr gdc git diff --word-diff --cached
     __git.create_abbr gds git diff --stat
     __git.create_abbr gdsc git diff --stat --cached
-    __git.create_abbr gdto git difftool
+    __git.create_abbr gdt git difftool
 
     # git format-patch abbr
-    __git.create_abbr gfp git format-patch
+    __git.create_abbr gfmp git format-patch
 
     # git update ignore abbr
     __git.create_abbr gignore git update-index --assume-unchanged
@@ -110,9 +112,8 @@ function __git.init
     # git pull abbr
     __git.create_abbr gl git pull
     __git.create_abbr gla git pull --all
-    __git.create_abbr glp git pull --prune
     __git.create_abbr glo git pull origin
-    __git.create_abbr glu git pull set-upstream
+    __git.create_abbr glu git pull --set-upstream
 
     # git log abbr
     __git.create_abbr glg git log --oneline --decorate --color --graph
@@ -124,7 +125,7 @@ function __git.init
     __git.create_abbr gmga git merge --abort
     __git.create_abbr gmgc git merge --continue
     __git.create_abbr gmgo git merge origin/\(__git.default_branch\)
-    __git.create_abbr gmt git mergetool --no-prompt
+    __git.create_abbr gmgt git mergetool
 
     # git push abbr
     __git.create_abbr gp git push
@@ -208,29 +209,37 @@ function __git.init
     __git.create_abbr gwch git whatchanged -p --abbrev-commit --pretty=medium
 
     # git flow abbreviations
-    __git.create_abbr gfl git flow
-    __git.create_abbr gflb git flow bugfix
-    __git.create_abbr gflf git flow feature
-    __git.create_abbr gflr git flow release
-    __git.create_abbr gflh git flow hotfix
-    __git.create_abbr gfls git flow support
+    __git.create_abbr gfb git flow bugfix
+    __git.create_abbr gff git flow feature
+    __git.create_abbr gfr git flow release
+    __git.create_abbr gfh git flow hotfix
+    __git.create_abbr gfs git flow support
 
-    __git.create_abbr gflbs git flow bugfix start
-    __git.create_abbr gflfs git flow feature start
-    __git.create_abbr gflrs git flow release start
-    __git.create_abbr gflhs git flow hotfix start
-    __git.create_abbr gflss git flow support start
+    __git.create_abbr gfbs git flow bugfix start
+    __git.create_abbr gffs git flow feature start
+    __git.create_abbr gfrs git flow release start
+    __git.create_abbr gfhs git flow hotfix start
+    __git.create_abbr gfss git flow support start
 
-    __git.create_abbr gflbt git flow bugfix track
-    __git.create_abbr gflft git flow feature track
-    __git.create_abbr gflrt git flow release track
-    __git.create_abbr gflht git flow hotfix track
-    __git.create_abbr gflst git flow support track
+    __git.create_abbr gfbt git flow bugfix track
+    __git.create_abbr gfft git flow feature track
+    __git.create_abbr gfrt git flow release track
+    __git.create_abbr gfht git flow hotfix track
+    __git.create_abbr gfst git flow support track
 
-    __git.create_abbr gflp git flow publish
+    __git.create_abbr gfp git flow publish
+
+    # git worktree abbreviations
+    __git.create_abbr gwt        git worktree
+    __git.create_abbr gwta       git worktree add
+    __git.create_abbr gwtls      git worktree list
+    __git.create_abbr gwtlo      git worktree lock
+    __git.create_abbr gwtmv      git worktree move
+    __git.create_abbr gwtpr      git worktree prune
+    __git.create_abbr gwtrm      git worktree remove
+    __git.create_abbr gwtulo     git worktree unlock
 
     # git extras abbreviations
-    __git.create_abbr gex git-extras
     __git.create_abbr g! git abort
     __git.create_abbr gbdm git delete-merged-branches
     __git.create_abbr gbds git delete-squashed-branches
