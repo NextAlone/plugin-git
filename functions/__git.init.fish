@@ -134,7 +134,7 @@ function __git.init
     __git.create_abbr gpo! git push origin --force-with-lease
     __git.create_abbr gpf git push fork
     __git.create_abbr gpf! git push fork --force-with-lease
-    __git.create_abbr gpu git push --set-upstream origin
+    __git.create_abbr gpu git push --set-upstream
 
     # git remote abbr
     __git.create_abbr gr git remote --verbose
