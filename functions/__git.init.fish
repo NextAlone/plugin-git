@@ -120,11 +120,11 @@ function __git.init
     __git.create_abbr glga git log --graph --decorate --all
 
     # git merge abr
-    __git.create_abbr gmg git merge
-    __git.create_abbr gmga git merge --abort
-    __git.create_abbr gmgc git merge --continue
-    __git.create_abbr gmgo git merge origin/\(__git.default_branch\)
-    __git.create_abbr gmgt git mergetool
+    __git.create_abbr gm git merge
+    __git.create_abbr gma git merge --abort
+    __git.create_abbr gmc git merge --continue
+    __git.create_abbr gmo git merge origin/\(__git.default_branch\)
+    __git.create_abbr gmt git mergetool
 
     # git push abbr
     __git.create_abbr gp git push
