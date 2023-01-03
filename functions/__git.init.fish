@@ -152,7 +152,7 @@ function __git.init
     __git.create_abbr grbdi git rebase dev --interactive
 
     # git revert abbr
-    __git.create_abbr grev git revert
+    __git.create_abbr grev git revert --no-edit
 
     # git reset abbr
     __git.create_abbr grh git reset
