@@ -3,12 +3,7 @@ function __git.init
         set -l name $argv[1]
         set -l body $argv[2..-1]
         abbr -a $name $body
-        set -a __git_plugin_abbreviations $name
     end
-
-    set -q __git_plugin_initialized; and return 0
-
-    set -U __git_plugin_abbreviations
 
     # git abbr
     __git.create_abbr g git
@@ -247,7 +242,4 @@ function __git.init
 
     # Cleanup declared functions
     functions -e __git.create_abbr
-
-    # Mark git plugin as initialized
-    set -U __git_plugin_initialized (date)
 end
