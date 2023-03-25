@@ -138,7 +138,7 @@ function __git.init
     __git.create_abbr grmv git remote rename
     __git.create_abbr grrm git remote remove
     __git.create_abbr grset git remote set-url
-    __git.create_abbr grup git remote update
+    __git.create_abbr gru git remote update
 
     # git rebase abbr
     __git.create_abbr grb git rebase
@@ -183,6 +183,7 @@ function __git.init
     __git.create_abbr gstd git stash drop
     __git.create_abbr gstl git stash list
     __git.create_abbr gstp git stash pop
+    __git.create_abbr gsth git stash push
     __git.create_abbr gsts git stash show --text
     __git.create_abbr gstc git stash clear
 
