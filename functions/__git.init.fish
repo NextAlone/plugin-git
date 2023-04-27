@@ -48,6 +48,7 @@ function __git.init
     __git.create_abbr gca! git commit --verbose --all --amend
     __git.create_abbr gcan! git commit --verbose --all --no-edit --amend
     __git.create_abbr gcm git commit --signoff --message
+    __git.create_abbr gcm! git commit --signoff --amend --message
     __git.create_abbr gcam git commit --signoff --all --message
     __git.create_abbr gcfx git commit --no-verify --fixup
     __git.create_abbr gcsq git commit --no-verify --squash
