@@ -50,8 +50,8 @@ function __git.init
     __git.create_abbr gcm git commit --signoff --message
     __git.create_abbr gcm! git commit --signoff --amend --message
     __git.create_abbr gcam git commit --signoff --all --message
-    __git.create_abbr gcx git commit --no-verify --fixup
-    __git.create_abbr gcq git commit --no-verify --squash
+    __git.create_abbr gcfx git commit --no-verify --fixup
+    __git.create_abbr gcsq git commit --no-verify --squash
     __git.create_abbr gcu 'git commit --signoff --message \'update:'
     __git.create_abbr gct 'git commit --signoff --message \'feat:'
     __git.create_abbr gcx 'git commit --signoff --message \'fix:'
@@ -243,6 +243,7 @@ function __git.init
     __git.create_abbr gbds git delete-squashed-branches
     __git.create_abbr gu git undo --soft
     __git.create_abbr gu! git undo --hard
+    __git.create_abbr gignore git ignore
 
     # Cleanup declared functions
     functions -e __git.create_abbr
