@@ -127,7 +127,7 @@ function __git.init
     # git push abbr
     __git.create_abbr gp git push
     __git.create_abbr gp! git push --force-with-lease
-    __git.create_abbr gpat git push --all --tags
+    __git.create_abbr gpt git push --tags
     __git.create_abbr gpo git push origin
     __git.create_abbr gpo! git push origin --force-with-lease
     __git.create_abbr gpf git push fork
@@ -198,6 +198,10 @@ function __git.init
     __git.create_abbr gtv git tag | sort -V
     __git.create_abbr gt! git tag --force
     __git.create_abbr gtd git tag --delete
+    __git.create_abbr gtda "git tag --delete (age)"
+    __git.create_abbr gtp "git tag (age --patch)"
+    __git.create_abbr gta "git tag (age --major)"
+    __git.create_abbr gtm "git tag (age --minor)"
 
     # git switch abbr
     __git.create_abbr gsw git switch
