@@ -143,11 +143,11 @@ function __git.init
     __git.create_abbr gru git remote update
 
     # git rebase abbr
-    __git.create_abbr grb git rebase
+    __git.create_abbr grb git rebase --committer-date-is-author-date
     __git.create_abbr grba git rebase --abort
     __git.create_abbr grbc git rebase --continue
     __git.create_abbr grbs git rebase --skip
-    __git.create_abbr grbi git rebase --interactive
+    __git.create_abbr grbi git rebase --interactive --commiter-date-is-author-date
     __git.create_abbr grbo git rebase --onto
     __git.create_abbr grbm git rebase \(__git.default_branch\)
     __git.create_abbr grbmi git rebase \(__git.default_branch\) --interactive
