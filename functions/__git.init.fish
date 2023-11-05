@@ -17,7 +17,7 @@ function __git.init
     # git apply abbr
     __git.create_abbr gapp git apply
 
-    # git am abbr 
+    # git am abbr
     __git.create_abbr gam git am
 
     # git branch abbr
@@ -103,7 +103,7 @@ function __git.init
     __git.create_abbr gfa git fetch --all --verbose
     __git.create_abbr gfo git fetch origin --verbose
 
-    # git init abbr 
+    # git init abbr
     __git.create_abbr ginit git init
 
     # git pull abbr
@@ -159,6 +159,8 @@ function __git.init
 
     # git revert abbr
     __git.create_abbr grev git revert --no-edit
+    __git.create_abbr greva git revert --abort
+    __git.create_abbr grevc git revert --continue
 
     # git reset abbr
     __git.create_abbr grh git reset
