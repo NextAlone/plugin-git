@@ -154,6 +154,9 @@ function __git.init
     __git.create_abbr grbd git rebase dev
     __git.create_abbr grbdi git rebase dev --interactive
 
+    # git reflog abbr
+    __git.create_abbr grl git reflog --relative-date
+
     # git revert abbr
     __git.create_abbr grev git revert --no-edit
 
