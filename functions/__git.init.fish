@@ -98,6 +98,9 @@ function __git.init
     __git.create_abbr gignore git update-index --assume-unchanged
     __git.create_abbr gunignore git update-index --no-assume-unchanged
 
+    # git update ref abbr
+    __git.create_abbr gur git update-ref
+
     # git fetch abbr
     __git.create_abbr gf git fetch --verbose
     __git.create_abbr gfa git fetch --all --verbose
