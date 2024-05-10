@@ -119,6 +119,7 @@ function __git.init
     __git.create_abbr glg git log --oneline --decorate --color --graph
     __git.create_abbr glgs git log --stat --graph
     __git.create_abbr glga git log --graph --decorate --all
+    __git.create_abbr glgr git log --walk-reflogs
 
     # git merge abr
     __git.create_abbr gm git merge
