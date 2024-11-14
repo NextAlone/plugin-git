@@ -56,6 +56,10 @@ function __git.init
     __git.create_abbr gct 'git commit --signoff --message \'feat:'
     __git.create_abbr gcx 'git commit --signoff --message \'fix:'
     __git.create_abbr gcw 'git commit --signoff --message \'WIP:'
+    __git.create_abbr gcus 'git commit --signoff --message \'update('
+    __git.create_abbr gcts 'git commit --signoff --message \'feat('
+    __git.create_abbr gcxs 'git commit --signoff --message \'fix('
+    __git.create_abbr gcws 'git commit --signoff --message \'WIP('
 
     # git config abbr
     __git.create_abbr gcf git config
@@ -120,6 +124,7 @@ function __git.init
     __git.create_abbr glgs git log --stat --graph
     __git.create_abbr glga git log --graph --decorate --all
     __git.create_abbr glgr git log --walk-reflogs
+    __git.create_abbr glgd 'git log --color --graph --pretty=format:"%C(auto)%h %C(bold blue)%ar %C(yellow)%d %C(reset)%s" --date=relative'
 
     # git merge abr
     __git.create_abbr gm git merge
@@ -215,6 +220,7 @@ function __git.init
     # git switch abbr
     __git.create_abbr gsw git switch
     __git.create_abbr gswc git switch --create
+    __git.create_abbr gswc! git switch --force-create
 
     # git whatchanged abbr
     __git.create_abbr gwch git whatchanged -p --abbrev-commit --pretty=medium
